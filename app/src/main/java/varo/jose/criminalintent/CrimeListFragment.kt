@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import varo.jose.criminalintent.databinding.FragmentCrimeListBinding
 
 private const val TAG = "CrimeListFragment"
@@ -32,6 +33,12 @@ class CrimeListFragment:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentCrimeListBinding.inflate(inflater, container, false)
+        binding.crimeRecylerView.layoutManager = LinearLayoutManager(context)
+
+        val crimes = crimeListViewModel.crimes
+        val adapter = CrimeListAdapter(crimes)
+        binding.crimeRecylerView.adapter = adapter
+
         return binding.root
     }
 

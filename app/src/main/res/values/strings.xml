@@ -4,6 +4,9 @@
     <string name="crime_title_label">Título</string>
     <string name="crime_details_label">Detalles</string>
     <string name="crime_solved_label">Solucionado</string>
+    <string name="crime_photo_button_description">Tomar foto de la escena del crimen</string>
+    <string name="crime_photo_no_image_description">Foto de la escena del crimen (no hay foto)</string>
+    <string name="crime_photo_image_description">Foto de la escena del crimen (foto)</string>
     <string name="new_crime">Nuevo crimen</string>
     <string name="delete_crime">Eliminar crimen</string>
     <string name="crime_suspect_text">Elegir sospechoso</string>

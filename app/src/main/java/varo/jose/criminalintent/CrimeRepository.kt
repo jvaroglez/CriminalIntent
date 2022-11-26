@@ -8,6 +8,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import varo.jose.criminalintent.database.CrimeDatabase
 import varo.jose.criminalintent.database.migration_1_2
+import varo.jose.criminalintent.database.migration_2_3
 import java.util.UUID
 
 private const val DATABASE_NAME = "crime-database"
@@ -24,7 +25,7 @@ class CrimeRepository private constructor(
             DATABASE_NAME
         )
         //.createFromAsset(DATABASE_NAME)
-        .addMigrations(migration_1_2)
+        .addMigrations(migration_1_2, migration_2_3)
         .build()
 
     fun getCrimes(): Flow<List<Crime>> = database.crimeDao().getCrimes()

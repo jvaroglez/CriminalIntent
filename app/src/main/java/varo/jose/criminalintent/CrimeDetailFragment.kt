@@ -126,18 +126,12 @@ class CrimeDetailFragment : Fragment() {
                 takePhoto.launch(photoUri)
             }
 
-            /*crimePhoto.setOnClickListener {
+            crimePhoto.setOnClickListener {
                 val photoFile = File(requireContext().applicationContext.filesDir, photoName)
                 val fragment = PictureDialogFragment(photoFile)
                 fragment.show(childFragmentManager, "PictureFragmentDialog")
 
-            }*/
-
-            /*val captureImageIntent = takePhoto.contract.createIntent(
-                requireContext(),
-                null
-            )
-            crimeCamera.isEnabled = canResolveIntent(captureImageIntent)*/
+            }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

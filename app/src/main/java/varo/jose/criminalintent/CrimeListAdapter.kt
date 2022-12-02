@@ -14,15 +14,9 @@ class CrimeHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
     fun bind(crime: Crime, onCrimeClicked: (crimeId: UUID) -> Unit) {
         binding.crimeTitle.text = crime.title
-        //binding.crimeDate.text = crime.date.toString()
         binding.crimeDate.text = DateFormat.format("EEEE, dd MMMM yyyy, hh:mm", crime.date)
 
         binding.root.setOnClickListener {
-            /*Toast.makeText(
-                binding.root.context,
-                "${crime.title} clicked!",
-                Toast.LENGTH_SHORT
-            ).show()*/
             onCrimeClicked(crime.id)
         }
 

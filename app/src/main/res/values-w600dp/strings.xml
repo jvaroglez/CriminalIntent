@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="crime_title_hint">
-        Enter a meaningful, memorable title for the crime.
+    <string name="app_name">CriminalIntent</string>
+    <string name="crime_title_hint">Escribe el título del crimen</string>
+    <string name="crime_title_label">Título</string>
+    <string name="crime_details_label">Detalles</string>
+    <string name="crime_solved_label">Solucionado</string>
+    <string name="crime_photo_button_description">Tomar foto de la escena del crimen</string>
+    <string name="crime_photo_no_image_description">Foto de la escena del crimen (no hay foto)</string>
+    <string name="crime_photo_image_description">Foto de la escena del crimen (foto)</string>
+    <string name="new_crime">Nuevo crimen</string>
+    <string name="delete_crime">Eliminar crimen</string>
+    <string name="crime_suspect_text">Elegir sospechoso</string>
+    <string name="crime_report_text">Enviar reporte de crimen</string>
+    <string name="crime_report">%1$s!
+    El crimen fue descubierto el %2$s. %3$s, y %4$s
     </string>
+    <string name="crime_report_solved">El caso fue resuelto</string>
+    <string name="crime_report_unsolved">El caso no fue resuelto</string>
+    <string name="crime_report_no_suspect">no hay sospechosos.</string>
+    <string name="crime_report_suspect">la persona sospechosa es %s.</string>
+    <string name="crime_report_subject">CriminalIntent Reporte de Crimen</string>
+    <string name="send_report">Enviar reporte via...</string>
 </resources>
